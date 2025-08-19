@@ -81,7 +81,7 @@
                 height: 100vh;
                 }
             .d {
-                display:none
+                display:none;
             }
             .b {
                 grid-column: span 11 / span 11;
@@ -98,9 +98,10 @@
                 background-color: #d0ff8e;
                 height: 800px;
             }
+        }
 
         /* incorporo el mediaquerie de resolucion 767px el nav se reduce */
-            @media (min-width: 100px) and (max-width: 766px) {
+            @media (min-width: 10px) and (max-width: 767px) {
             
             .a {
                 display:none;
@@ -109,21 +110,31 @@
                 display:none;
             }
             .b {
-                grid-column: span 11 / span 11;
-                grid-column-start: 2;
+                grid-column: span 12 / span 12;
+                grid-column-start: 1;
+                grid-row-start: 1;
                 background-color: #8ee6ff;
                 height: 100px;
                 }
 
             .c {
-                grid-column: span 11 / span 11;
-                grid-row: span 7 / span 7;
-                grid-column-start: 2;
+                grid-column: span 12 / span 12;
+                grid-row: span 6 / span 6;
+                grid-column-start: 1;
                 grid-row-start: 2;
                 background-color: #d0ff8e;
                 height: 800px;
             }
-        
+            #aHorizontal {
+                grid-column: span 12 / span 12;
+                grid-row: span 1 / span 1;
+                grid-column-start: 1;
+                grid-row-start: 8;
+                background-color: #8e9eff;
+                height: 100px;
+                position: sticky;
+            }
+
         }
 
     </style>
@@ -143,6 +154,9 @@
         <aside class="d">
             <h2>D</h2>
         </aside>
+        <nav id="aHorizontal">
+            <h2>A Soy menu horizontal</h2>
+        </nav>
     </div>
     
 </body>
